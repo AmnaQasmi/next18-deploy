@@ -5,11 +5,12 @@ import { useRouter } from "next/navigation";
 import Footer from '@/components/Footer';
 import { userInfo } from '@/constants/constant';
 
-export const Service = () => {
+const Service = () => {
     const route = useRouter();
-    const Navigate = (Name:any) => {
-        route.push(Name)
+    const Navigate = (Name: string) => {
+        route.push(Name);
     }
+
     return (
         <div className='absolute '>
             <div className='flex flex-row md:flex-row md:justify-center justify-between items-center absolute text-[#fffdfd]'>
@@ -39,7 +40,8 @@ export const Service = () => {
             </div>
             <div className='text-center justify-center items-center mb-10'>
                 <h4 className="lg:ml-[10px] my-8 text-[#07101f] font-[sans] lg:text-7xl md:text-5xl text-3xl">
-                    <i> Services Provided By Our Company </i></h4>
+                    <i> Services Provided By Our Company </i>
+                </h4>
                 {
                     userInfo.services?.id?.map((skills, index) => (
                         <span
@@ -58,7 +60,7 @@ export const Service = () => {
                         In addition to developing its own cars W Motors developed the first vehicle for China-based sister company ICONIQ Motors — the ICONIQ Seven.
                     </p>
                     <p className=' text-start mx-10 my-3 lg:text-3xl md:text-2xl text-xl'>
-                        W Motors plans to begin development of its production facility in Dubai.The facility will accommodate the production of W Motors&#39; current and future models including electric and autonomous vehicles and join the existing W Motors&#39; Dubai-based Design Studio and its flagship Gallery.
+                        W Motors plans to begin development of its production facility in Dubai. The facility will accommodate the production of W Motors&#39; current and future models including electric and autonomous vehicles and join the existing W Motors&#39; Dubai-based Design Studio and its flagship Gallery.
                     </p>
                 </div>
             </div>
@@ -67,7 +69,6 @@ export const Service = () => {
                     <h4 className="lg:ml-[10px] lg:my-8 my-3 text-[#081224] mr-6 font-[sans] lg:text-7xl md:text-6xl text-3xl">
                         <i> Brand Ambassador of VMotors </i>
                     </h4>
-
                 </div>
 
                 <div className='flex lg:flex-row flex-col lg:mt-[25px] mt-2'>
@@ -96,6 +97,8 @@ export const Service = () => {
             </div>
             <Footer />
         </div>
-    )
+    );
 }
-export default Service
+
+export default Service;
+
