@@ -37,19 +37,19 @@ const Footer = () => {
                                 <h2 className="title-font font-medium text-[#0d1e35] tracking-widest text-sm mb-3 ">ABOUT US</h2>
                                 <nav className="list-none mb-10">
                                     <li>
-                                        <a href="http://localhost:3000/visitcars" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">VISIT US</a>
+                                        <a href="/visitcars" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">VISIT US</a>
                                     </li>
                                     <li>
-                                        <a href="http://localhost:3000/cars" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">OUR CARS</a>
+                                        <a href="/cars" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">OUR CARS</a>
                                     </li>
                                     <li>
-                                        <a href="http://localhost:3000/stickers" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">OUR STICKERS</a>
+                                        <a href="/stickers" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">OUR STICKERS</a>
                                     </li>
                                     <li>
-                                        <a href="http://localhost:3000/services" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">OUR SERVICES</a>
+                                        <a href="/services" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">OUR SERVICES</a>
                                     </li>
                                     <li>
-                                        <a href="http://localhost:3000/ourstory" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">OUR STORY</a>
+                                        <a href="/ourstory" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800">OUR STORY</a>
                                     </li>
                                 </nav>
                             </div>
