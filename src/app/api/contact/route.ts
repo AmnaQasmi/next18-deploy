@@ -1,16 +1,25 @@
 import { NextRequest, NextResponse } from 'next/server';
-import * as fs from 'fs';
+import { promises as fs } from 'fs';
 
 export async function POST(req: NextRequest) {
     try {
         const body = await req.json(); // Parse the request body
         console.log(body);
-        let data = await fs.promises.readdir('contactdata');
+
+        // Check if the directory exists, if not, create it
+        const dirPath = 'contactdata';
+        try {
+            await fs.access(dirPath);
+        } catch (error) {
+            await fs.mkdir(dirPath);
+        }
+
+        let data = await fs.readdir(dirPath);
         console.log(data);
-        await fs.promises.writeFile(`contactdata/${data.length + 1}.json`, JSON.stringify(body));
+        await fs.writeFile(`${dirPath}/${data.length + 1}.json`, JSON.stringify(body));
         return NextResponse.json(body);
     } catch (error) {
-        console.log((error as { message: string }).message);
+        // console.log(error.message);
         return NextResponse.json({ error: "Hello from Error" });
     }
 }
