@@ -4,19 +4,21 @@ import Footer from '@/components/Footer';
 import { FaOpencart } from "react-icons/fa";
 import { useRouter } from 'next/navigation';
 
-export const Layout = () => {
+const page = () => {
     const router = useRouter(); // Updated hook usage
 
     const navigate = (name) => {
         router.push(name)
     }
+
     return (
         <div >
             <Menu />
 
             <ul className='text-center justify-center items-start '>
                 <li className='lg:text-5xl md:text-3xl text-2xl hover:text-[#666768] to text-[#fffdfd] font-[Menlo] '>
-                    <h4 className='font-extrabold md:mr-[150px] lg:pl-[400px] items-center uppercase my-3 mx-5 absolute'><i>NOW CHECK THIS OUT </i></h4>
+                    <h4 className='font-extrabold md:mr-[150px] lg:pl-[400px] items-center uppercase my-3 mx-5 absolute'><i>NOW CHECK THpage
+                     </i></h4>
 
                     <video
                         autoPlay muted loop style={{
@@ -38,4 +40,4 @@ export const Layout = () => {
     )
 }
 
-export default Layout;
+export default page;
