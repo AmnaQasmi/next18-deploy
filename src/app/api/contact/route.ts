@@ -27,11 +27,3 @@ export async function POST(req: NextRequest) {
 export async function GET() {
     return NextResponse.json(["allInfoData"]);
 }
-
-export default async function handler(req: NextRequest, res: NextResponse) {
-    if (req.method === 'POST') {
-        return POST(req);
-    } else {
-        return GET();
-    }
-}
