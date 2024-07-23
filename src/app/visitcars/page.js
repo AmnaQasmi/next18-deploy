@@ -4,21 +4,22 @@ import Footer from '@/components/Footer';
 import { FaOpencart } from "react-icons/fa";
 import { useRouter } from 'next/navigation';
 
-const page = () => {
+const Page = () => { // Rename the component to Page
     const router = useRouter(); // Updated hook usage
 
     const navigate = (name) => {
-        router.push(name)
+        router.push(name);
     }
 
     return (
-        <div >
+        <div>
             <Menu />
 
-            <ul className='text-center justify-center items-start '>
-                <li className='lg:text-5xl md:text-3xl text-2xl hover:text-[#666768] to text-[#fffdfd] font-[Menlo] '>
-                    <h4 className='font-extrabold md:mr-[150px] lg:pl-[400px] items-center uppercase my-3 mx-5 absolute'><i>NOW CHECK THpage
-                     </i></h4>
+            <ul className='text-center justify-center items-start'>
+                <li className='lg:text-5xl md:text-3xl text-2xl hover:text-[#666768] to text-[#fffdfd] font-[Menlo]'>
+                    <h4 className='font-extrabold md:mr-[150px] lg:pl-[400px] items-center uppercase my-3 mx-5 absolute'>
+                        <i>NOW CHECK THIS OUT</i>
+                    </h4>
 
                     <video
                         autoPlay muted loop style={{
@@ -30,7 +31,9 @@ const page = () => {
                     </video>
 
                     <div className='items-center justify-center lg:mx-[620px] mx-4 py-2 px-2 my-2'>
-                        <button onClick={() => navigate("/cars")} className='flex text-[#c5c2c2] bg-[#1d5045] border-2 border-[#dbd8d8] shadow-lg shadow-slate-900 rounded-md'> <FaOpencart /> Wanna Buy</button>
+                        <button onClick={() => navigate("/cars")} className='flex text-[#c5c2c2] bg-[#1d5045] border-2 border-[#dbd8d8] shadow-lg shadow-slate-900 rounded-md'>
+                            <FaOpencart /> Wanna Buy
+                        </button>
                     </div>
                 </li>
             </ul>
@@ -40,4 +43,4 @@ const page = () => {
     )
 }
 
-export default page;
+export default Page; // Export the component with the updated name
