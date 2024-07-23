@@ -1,17 +1,18 @@
-"use client"
+'use client';
+
 import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { GiHomeGarage } from "react-icons/gi";
 import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
+import Image from 'next/image';
 
 const Login = () => {
-  // set Navigate
   const route = useRouter();
   const Navigate = (Name) => {
     route.push(Name)
   }
-  // set setvalue
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -19,15 +20,13 @@ const Login = () => {
   const [desc, setDesc] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
-  // handle submit
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, phone, desc, email, password);
     const data = { phone, name, email, password, desc };
 
-    // now fetch
     fetch('http://localhost:3000/api/contact', {
-      method: 'POST', // or'PUT'
+      method: 'POST', 
       headers: {
         'Content-Type': 'application/json',
       },
@@ -40,14 +39,13 @@ const Login = () => {
         setDesc('');
         setEmail('');
         setPassword('');
-        return console.log({ message: "successfully joined" });
+        console.log({ message: "successfully joined" });
       })
       .catch((error) => {
         console.error('Error:', error);
       });
   }
 
-  // now set handlechange
   const handleChange = (e) => {
     const { name, value } = e.target;
     if (name === 'phone') setPhone(value);
@@ -63,12 +61,10 @@ const Login = () => {
 
   return (
     <div className='absolute'>
-
       <div className='flex flex-row md:flex-row md:justify-center justify-between items-center absolute text-[#fffdfd]'>
-        {/* right home garage icon */}
         <ul>
           <li className=' absolute mx-5'>
-            <Link href="/" >
+            <Link href="/">
               <GiHomeGarage
                 className='text-[#fffdfd] lg:my-4 lg:mx-2 my-1 text-3xl lg:text-5xl'
                 onClick={() => Navigate("/")}
@@ -107,7 +103,7 @@ const Login = () => {
                 <label htmlFor="desc" className='text-[#532103e8] p-1'>Review</label>
                 <textarea className=" rounded-md bg-[#e6c2ade8] border-[2px] border-[#83431ee8] text-[#532103e8]" id="desc" name='desc' value={desc} onChange={handleChange} required placeholder='Elaborate Your Concern' />
               </li>
-              <li className='my-7 lg:ml-24  mitems-center justify-center text-center'>
+              <li className='my-7 lg:ml-24 items-center justify-center text-center'>
                 <button type="submit" className='w-fit rounded-md bg-[#b8754ee8] border-[2px] border-[#83431ee8] py-1 px-1'>Submit</button>
               </li>
             </ul>
@@ -115,7 +111,7 @@ const Login = () => {
         </form>
       </div >
       <div className='flex justify-end items-end '>
-        <img
+        <Image
           src={"/Ingo.jpg"}
           alt='dp'
           width={2600}
@@ -126,11 +122,10 @@ const Login = () => {
           JOIN OUR COMMUNITY
         </h3>
       </div>
-      {/* nex video for introduction */}
       <div className='flex items-center text-center justify-center'>
         <ul >
           <li className='lg:text-5xl md:text-3xl text-2xl font-[Menlo] text-[#fffdfd] '>
-            <h4 className='font-extrabold md:mr-[150px] absolute uppercase my-3 mx-5'> Let&apous;s Explore The Best Ride Togather</h4>
+            <h4 className='font-extrabold md:mr-[150px] absolute uppercase my-3 mx-5'> Let&apos;s Explore The Best Ride Togather</h4>
             <video
               autoPlay muted loop style={{
                 height: "115vh", // or any other value you want

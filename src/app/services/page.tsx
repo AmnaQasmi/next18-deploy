@@ -7,7 +7,7 @@ import { userInfo } from '@/constants/constant';
 
 export const Service = () => {
     const route = useRouter();
-    const Navigate = (Name: any) => {
+    const Navigate = (Name:any) => {
         route.push(Name)
     }
     return (
@@ -41,7 +41,7 @@ export const Service = () => {
                 <h4 className="lg:ml-[10px] my-8 text-[#07101f] font-[sans] lg:text-7xl md:text-5xl text-3xl">
                     <i> Services Provided By Our Company </i></h4>
                 {
-                    userInfo.services.id.map((skills, index) => (
+                    userInfo.services?.id?.map((skills, index) => (
                         <span
                             key={index}
                             className={"bg-[#125555] bg-gradient-to-r hover:from-[#345e5e] hover:to-[#888787] m-3 p-3 rounded-md inline-block text-lg font-serif font-semibold text-[#d8d1d1] cursor-default mb-14 shadow-xl "}>

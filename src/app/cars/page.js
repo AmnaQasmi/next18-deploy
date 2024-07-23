@@ -11,6 +11,8 @@ import { FaBagShopping } from "react-icons/fa6";
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem, removeItem, clearCart } from '@/store/cartSlice';
 import { loadStripe } from '@stripe/stripe-js';
+import Image from 'next/image';
+import toast from 'react-hot-toast'; // Added toast import
 
 const stripePromise = loadStripe('pk_test_51Pf5EhCdXu8yBChANSargTazr0qyy2wmNsYWLn8TE1275HeCRpbKBANyzzAYVmWkuASBVYGkJtZwshLkSm1R80wv00LieqtUA4');
 
@@ -50,7 +52,7 @@ const Cars = () => {
     } catch (error) {
         toast.error('Error creating checkout session');
     }
-};
+  };
 
   // Calculate total item count
   const totalItemCount = cart.items.reduce((total, item) => total + item.quantity, 0);
@@ -60,7 +62,7 @@ const Cars = () => {
       <div className='flex flex-col md:flex-row md:justify-start justify-center items-center py-2 '>
         <div className="logo mx-5 my-2 ">
           <Link href={'/'}>
-            <img src={"/2.png"} alt='logo' width={250} height={35} className='rounded-xl text-sm md:mr-[365px] md:w-[120px] w-[15vh] shadow-md' />
+            <Image src={"/2.png"} alt='logo' width={250} height={35} className='rounded-xl text-sm md:mr-[365px] md:w-[120px] w-[15vh] shadow-md' />
           </Link>
         </div>
         <div className="nav lg:ml-[0px] text-[#0d1e35] ">
