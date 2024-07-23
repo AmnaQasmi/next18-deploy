@@ -3,7 +3,6 @@ import { headerItems, userInfo } from '@/constants/constant';
 import Link from 'next/link';
 import { useState } from "react"
 import { Link as ScrollLink } from "react-scroll"
-import img from 'next/image';
 import Lykan from '../../public/lykan.jpeg';
 import Fenyr from '../../public/fenyr.jpeg';
 import GhaithSMP from '../../public/ghaithpetrol.jpeg';
@@ -12,6 +11,7 @@ import GhaithVip from '../../public/ghaith-vip.jpeg';
 import { useRouter } from 'next/navigation';
 import { AiOutlineX } from "react-icons/ai";
 import { NavItems } from '@/models/Headers';
+import Image from 'next/image';
 
 
 const Intro: React.FC = () => {
@@ -88,7 +88,7 @@ const Intro: React.FC = () => {
           </div>
           {/* img Content */}
           <div className='w-5 lg:mr-[470px] lg:pl-[0px] lg:mb-[560px] mb-[450px] md:pl-[20px] md:ml-[2px] ml-[20px] sm:ml[5px]'>
-            <img
+            <Image
               width={700}
               height={880}
               src={'Lykan'}
@@ -115,7 +115,7 @@ const Intro: React.FC = () => {
           </div>
           {/* img Content */}
           <div className='w-5 lg:mr-[460px] lg:pl-[0px] lg:mb-[560px] mb-[450px] md:pl-[20px] md:ml-[2px] ml-[20px] sm:ml[5px]'>
-            <img
+            <Image
               width={700}
               height={880}
               src={'Fenyr'}
@@ -143,7 +143,7 @@ const Intro: React.FC = () => {
           </div>
           {/* img Content */}
           <div className='w-5 lg:mr-[550px] lg:pl-[109px] lg:mb-[560px] mb-[450px] md:pl-[20px] md:ml-[2px] ml-[20px] sm:ml[5px]'>
-            <img
+            <Image
               width={700}
               height={880}
               src={'GhaithSMP'}
@@ -170,7 +170,7 @@ const Intro: React.FC = () => {
           </div>
           {/* img Content */}
           <div className='w-5 lg:mr-[550px] lg:pl-[192px] lg:mb-[560px] mb-[450px] md:pl-[20px] md:ml-[2px] ml-[20px] sm:ml[5px]'>
-            <img
+            <Image
               width={700}
               height={880}
               src={'GhaithSwat'}
@@ -198,7 +198,7 @@ const Intro: React.FC = () => {
           </div>
           {/* img Content */}
           <div className='w-5 lg:mr-[550px] lg:pl-[192px] lg:mb-[560px] mb-[450px] md:pl-[20px] md:ml-[2px] ml-[20px] sm:ml[5px]'>
-            <img
+            <Image
               width={700}
               height={880}
               src={'GhaithVip'}
