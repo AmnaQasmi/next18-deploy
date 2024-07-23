@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import { userInfo } from "@/constants/constant";
 import { FaOpencart } from "react-icons/fa";
 import Footer from '@/components/Footer';
-import Image from 'next/image';
 
 export const Thoughts = () => {
     const route = useRouter();
@@ -29,7 +28,7 @@ export const Thoughts = () => {
             </div>
             <div className='flex justify-end items-end  '>
 
-                <Image
+                <img
                     src={"/FOUNDER.jpg"}
                     alt='dp'
                     width={2500}

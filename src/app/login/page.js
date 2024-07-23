@@ -1,6 +1,5 @@
 "use client"
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { GiHomeGarage } from "react-icons/gi";
@@ -116,7 +115,7 @@ const Login = () => {
         </form>
       </div >
       <div className='flex justify-end items-end '>
-        <Image
+        <img
           src={"/Ingo.jpg"}
           alt='dp'
           width={2600}
@@ -131,7 +130,7 @@ const Login = () => {
       <div className='flex items-center text-center justify-center'>
         <ul >
           <li className='lg:text-5xl md:text-3xl text-2xl font-[Menlo] text-[#fffdfd] '>
-            <h4 className='font-extrabold md:mr-[150px] absolute uppercase my-3 mx-5'> Let's Explore The Best Ride Togather</h4>
+            <h4 className='font-extrabold md:mr-[150px] absolute uppercase my-3 mx-5'> Let&apous;s Explore The Best Ride Togather</h4>
             <video
               autoPlay muted loop style={{
                 height: "115vh", // or any other value you want

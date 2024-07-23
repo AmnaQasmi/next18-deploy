@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { headerItems } from '@/constants/constant';
-import Image from 'next/image';
+
 
 const Footer = () => {
     return (
@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                             <Link href={"/"} className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                                <Image src="/w.png" alt="" width={200} height={40} />
+                                <img src="/w.png" alt="" width={200} height={40} />
                             </Link>
 
                             <p className="mt-2 text-sm text-gray-500"> Venom Motors Create The first best HyperSport car in the world you also know us in Universal Studios&#39; Furious 7. It was featured as the hero car in the movie and is the most expensive car ever to be featured in The Fast & The Furious Franchise. </p>
@@ -82,7 +82,7 @@ const Footer = () => {
                     </div>
                     <div className="bg-[#807f7f]">
                         <div className=" mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row ">
-                            <i className="text-[#c7ced1] text-sm text-center sm:text-left ">© 2024 VMOTORS — ALL PICTURES AND OTHER WORKS PUBLISHED ON THIS WEBSITE ARE SUBJECT TO THE COPYRIGHT OF V MOTORS AUTOMOTIVE GROUP HOLDING LIMITED. ALL RIGHTS RESERVED.
+                            <i className="text-[#c7ced1] text-sm text-center sm:text-left ">&copy; 2024 VMOTORS — ALL PICTURES AND OTHER WORKS PUBLISHED ON THIS WEBSITE ARE SUBJECT TO THE COPYRIGHT OF V MOTORS AUTOMOTIVE GROUP HOLDING LIMITED. ALL RIGHTS RESERVED.
                                 <a href="https://wmotors.ae/hypercars.html" rel="noopener noreferrer" className="text-[#c7ced1] ml-2" target="_blank">@vmotors</a>
                             </i>
                             <span className="inline-flex sm:ml-auto sm:mt-0 mt-5 justify-center sm:justify-start">

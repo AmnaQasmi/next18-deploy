@@ -1,7 +1,6 @@
 // HeroBanner.tsx
 'use client'
 import React, { useEffect, useState } from 'react';
-import Image from "next/image";
 import { client } from "@/lib/sanityClient";
 import { Image as IImage } from "sanity";
 import { urlForImage } from "../../sanity/lib/image";
@@ -57,7 +56,7 @@ const HeroBanner = () => {
                             <Link href={''}>
                                 <div>
                                     <div className="block overflow-hidden">
-                                        <Image
+                                        <img
                                             height={300}
                                             width={300}
                                             className="lg:h-[35vh] h-[25vh] block lg:w-[60vh] md:w-[45vh] sm:w-[55vh] w-[55vh] m-auto rounded-md"

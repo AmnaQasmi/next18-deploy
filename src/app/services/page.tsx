@@ -4,7 +4,6 @@ import { GiHomeGarage } from "react-icons/gi";
 import { useRouter } from "next/navigation";
 import Footer from '@/components/Footer';
 import { userInfo } from '@/constants/constant';
-import Image from 'next/image';
 
 export const Service = () => {
     const route = useRouter();
@@ -27,7 +26,7 @@ export const Service = () => {
                 </ul>
             </div>
             <div className='flex justify-end items-end  '>
-                <Image
+                <img
                     src={"/services.jpg"}
                     alt='dp'
                     width={2000}
@@ -55,8 +54,8 @@ export const Service = () => {
                         <i>We Are basically an Automotive company and provide automotive services</i>
                     </h3>
                     <p className='text-start mx-10 my-3 lg:text-3xl md:text-2xl text-xl'>
-                        V Motors is an Emirati sports car company, being the first developer of high-performance luxury sports cars in the Middle East. Based in Dubai, the company's activities include automotive design, research and development, as well as vehicle engineering and manufacture. V Motors also performs automotive consultancy within its Special Project Operations division.
-                        In addition to developing its own cars, W Motors developed the first vehicle for China-based sister company ICONIQ Motors — the ICONIQ Seven.
+                        V Motors is an Emirati sports car company, being the first developer of high-performance luxury sports cars in the Middle East. Based in Dubai, the company&apos; activities include automotive design, research and development, as well as vehicle engineering and manufacture. V Motors also performs automotive consultancy within its Special Project Operations division.
+                        In addition to developing its own cars W Motors developed the first vehicle for China-based sister company ICONIQ Motors — the ICONIQ Seven.
                     </p>
                     <p className=' text-start mx-10 my-3 lg:text-3xl md:text-2xl text-xl'>
                         W Motors plans to begin development of its production facility in Dubai.The facility will accommodate the production of W Motors&#39; current and future models including electric and autonomous vehicles and join the existing W Motors&#39; Dubai-based Design Studio and its flagship Gallery.
@@ -85,7 +84,7 @@ export const Service = () => {
                     </div>
                     <div className='justify-center items-center text-center lg:w-[500px] md:w-[450px] w-[350px] lg:ml-[170px] md:ml-[160px] sm:ml-[155px] ml-[75px] mx-[65px]'>
 
-                        <Image
+                        <img
                             src={'/brand ambassador.webp'}
                             alt='brand ambassador'
                             height={50}

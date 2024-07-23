@@ -3,7 +3,7 @@ import { headerItems, userInfo } from '@/constants/constant';
 import Link from 'next/link';
 import { useState } from "react"
 import { Link as ScrollLink } from "react-scroll"
-import Image from 'next/image';
+import img from 'next/image';
 import Lykan from '../../public/lykan.jpeg';
 import Fenyr from '../../public/fenyr.jpeg';
 import GhaithSMP from '../../public/ghaithpetrol.jpeg';
@@ -58,7 +58,7 @@ const Intro: React.FC = () => {
             <Link
               href='/ourstory'
               onClick={() => Navigate("/ourstory")}
-              className='flex justify-center items-center text-center lg:ml-[70px] hover:text-[#868688] to text-[#12192c]'>“A MODERN MACHINE WITH A TOUCH OF HUMANITY”</Link >
+              className='flex justify-center items-center text-center lg:ml-[70px] hover:text-[#868688] to text-[#12192c]'>&ldquo;A MODERN MACHINE WITH A TOUCH OF HUMANITY&rdquo;</Link >
             <h3 className='flex lg:text-4xl md:text-2xl text-xl justify-center items-center text-center font-[mono] lg:ml-9 md:ml-8 mt-7 '>By</h3>
           </div>
           <h2 className='text-3xl text-center justify-center items-center font-[Apple Color Emoji] font-extrabold lg:font-bold md:font-semibold font-[Liberation Mono] uppercase mb-7 hover:text-[#4c4b4e] to text-[#12192c]'> CEO & FOUNDER OF WMOTOR <br />{userInfo.name}
@@ -82,16 +82,16 @@ const Intro: React.FC = () => {
                 ))
               }
               {/* Text content */}
-              <h4 className='lg:text-3xl md:text-2xl text-xl flex flex-wrap w-[500px] lg:pl-[20px] pl-[20px] lg:pb-[20px] lg:pt-[10px] text-[#323232] font-serif'>The first hypercar created by W Motors , the Lykan was also Aisa's first HyperSport, catapulted the company to international stardom when it took center stage in Universal Studios&#39; Furious 7. It was featured as the hero car in the movie and is the most expensive car ever to be featured in The Fast & The Furious Franchise.
+              <h4 className='lg:text-3xl md:text-2xl text-xl flex flex-wrap w-[500px] lg:pl-[20px] pl-[20px] lg:pb-[20px] lg:pt-[10px] text-[#323232] font-serif'>The first hypercar created by W Motors , the Lykan was also Aisa&apous;s first HyperSport, catapulted the company to international stardom when it took center stage in Universal Studios&#39; Furious 7. It was featured as the hero car in the movie and is the most expensive car ever to be featured in The Fast & The Furious Franchise.
               </h4>
             </div>
           </div>
-          {/* Image Content */}
+          {/* img Content */}
           <div className='w-5 lg:mr-[470px] lg:pl-[0px] lg:mb-[560px] mb-[450px] md:pl-[20px] md:ml-[2px] ml-[20px] sm:ml[5px]'>
-            <Image
+            <img
               width={700}
               height={880}
-              src={Lykan}
+              src={'Lykan'}
               alt='Lykan Hypersport'
               className='absolute rounded-md lg:w-[628px] lg:h-[560px] md:w-[500px] md:h-[460px] w-[460px] h-[250px]' />
           </div>
@@ -113,12 +113,12 @@ const Intro: React.FC = () => {
             {/* Text content */}
             <h4 className='lg:text-3xl md:text-2xl text-wrap flex flex-wrap w-[500px] lg:pl-[30px] pl-[25px] lg:pb-[20px] lg:pt-[10px] text-[#323232] font-serif'>The Fenyr SuperSport is a true performance beast. W Motors broke the bonds of conventional hypercar design with the Fenyr SuperSport to unleash a powerful, high-performance supercar in a league of its own. The Fenyr SuperSport is the second hypercar in the W Motors sought-after portfolio.</h4>
           </div>
-          {/* Image Content */}
+          {/* img Content */}
           <div className='w-5 lg:mr-[460px] lg:pl-[0px] lg:mb-[560px] mb-[450px] md:pl-[20px] md:ml-[2px] ml-[20px] sm:ml[5px]'>
-            <Image
+            <img
               width={700}
               height={880}
-              src={Fenyr}
+              src={'Fenyr'}
               alt='Fenyr Supersport'
               className='absolute rounded-md lg:w-[625px] lg:h-[560px] md:w-[500px] md:h-[460px] w-[460px] h-[250px]]' />
           </div>
@@ -138,15 +138,15 @@ const Intro: React.FC = () => {
               ))
             }
             {/* Text content */}
-            <h4 className='lg:text-3xl md:text-2xl text-wrap flex flex-wrap w-[500px] lg:pl-[30px] pl-[25px] lg:pb-[20px] lg:pt-[10px] text-[#323232] font-serif'>The mobile policing solutions, the Special Force Vehicle is exclusively featuring W Motors' distinctive DNA,as the most advanced police vehicle in the world.And features custom-built, specially designed compartment in the boot to store rescue and safety equipment with strong lines highlighting powerful muscles.</h4>
+            <h4 className='lg:text-3xl md:text-2xl text-wrap flex flex-wrap w-[500px] lg:pl-[30px] pl-[25px] lg:pb-[20px] lg:pt-[10px] text-[#323232] font-serif'>The mobile policing solutions, the Special Force Vehicle is exclusively featuring W Motors&apous; distinctive DNA,as the most advanced police vehicle in the world.And features custom-built, specially designed compartment in the boot to store rescue and safety equipment with strong lines highlighting powerful muscles.</h4>
 
           </div>
-          {/* Image Content */}
+          {/* img Content */}
           <div className='w-5 lg:mr-[550px] lg:pl-[109px] lg:mb-[560px] mb-[450px] md:pl-[20px] md:ml-[2px] ml-[20px] sm:ml[5px]'>
-            <Image
+            <img
               width={700}
               height={880}
-              src={GhaithSMP}
+              src={'GhaithSMP'}
               alt='Ghiath SmartPatrol'
               className='absolute rounded-md lg:w-[675px] lg:h-[560px] md:w-[500px] md:h-[460px] w-[460px] h-[250px]' />
           </div>
@@ -168,12 +168,12 @@ const Intro: React.FC = () => {
             {/* Text content */}
             <h4 className='lg:text-3xl md:text-2xl text-wrap flex flex-wrap w-[500px] lg:pl-[30px] pl-[25px] lg:pb-[20px] lg:pt-[10px] text-[#323232] font-serif'>Developed by W Motors the GHIATH SWAT aggressive design and technologies meet the highest industry standards for tactical response.The ruggedly aggressive design of the GHIATH SWAT is supported by customized heavy duty upgraded technological capabilities designed to support mission safety, security and success.</h4>
           </div>
-          {/* Image Content */}
+          {/* img Content */}
           <div className='w-5 lg:mr-[550px] lg:pl-[192px] lg:mb-[560px] mb-[450px] md:pl-[20px] md:ml-[2px] ml-[20px] sm:ml[5px]'>
-            <Image
+            <img
               width={700}
               height={880}
-              src={GhaithSwat}
+              src={'GhaithSwat'}
               alt='Ghiath'
               className='absolute rounded-md lg:w-[675px] lg:h-[560px] md:w-[500px] md:h-[460px] w-[460px] h-[250px]' />
           </div>
@@ -196,12 +196,12 @@ const Intro: React.FC = () => {
             <h4 className='lg:text-3xl md:text-2xl text-wrap flex flex-wrap w-[500px] lg:pl-[30px] pl-[25px] lg:pb-[20px] lg:pt-[10px] text-[#323232] font-serif'>GHIATH VIP offers the perfect blend of comfort, functionality and style, With its aggressive design, this vehicle exudes power and confidence. Equipped with LED projector headlights, the vehicle ensures optimal visibility and safety, creating a truly captivating ambiance.</h4>
 
           </div>
-          {/* Image Content */}
+          {/* img Content */}
           <div className='w-5 lg:mr-[550px] lg:pl-[192px] lg:mb-[560px] mb-[450px] md:pl-[20px] md:ml-[2px] ml-[20px] sm:ml[5px]'>
-            <Image
+            <img
               width={700}
               height={880}
-              src={GhaithVip}
+              src={'GhaithVip'}
               alt='Ghiath'
               className='absolute rounded-md lg:w-[675px] lg:h-[560px] md:w-[500px] md:h-[460px] w-[460px] h-[250px]' />
           </div>

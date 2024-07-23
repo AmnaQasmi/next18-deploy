@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { client } from "@/lib/sanityClient"
 import { urlForImage } from "../../sanity/lib/image";
 
@@ -28,7 +27,7 @@ export default async function BrandAmmbasador() {
             {data.map((item: any) => (
                 <div className="lg:pt-5 md:pt-3 pt-2 bg-[#adb3b8] border rounded-sm border-x-[1px] ">
                     <div>
-                        <Image
+                        <img
                             height={300}
                             width={400}
                             className="max-h-[850px] object-cover "

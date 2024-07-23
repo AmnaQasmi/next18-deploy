@@ -1,5 +1,4 @@
 'use client'
-import Image from 'next/image'
 import { GiHomeGarage } from "react-icons/gi";
 import { useRouter } from "next/navigation";
 import Link from 'next/link'
@@ -13,7 +12,7 @@ const Menu = () => {
   return (
     <div className='flex flex-col md:flex-row md:justify-start justify-center items-center py-2 '>
       <div className="logo mx-5 my-2 ">
-        <Image src={"/2.png"} alt='logo' width={200} height={40} className='rounded-xl md:mr-[365px] md:w-[120px] shadow-lg' />
+        <img src={"/2.png"} alt='logo' width={200} height={40} className='rounded-xl md:mr-[365px] md:w-[120px] shadow-lg' />
       </div>
       <div className="nav lg:ml-[0px] text-[#0d1e35] ">
 

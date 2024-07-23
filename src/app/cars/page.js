@@ -2,7 +2,6 @@
 
 import React, { useRef } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import Footer from '@/components/Footer';
 import { FaOpencart } from "react-icons/fa";
 import HeroBanner from '@/components/heroBanner';
@@ -61,7 +60,7 @@ const Cars = () => {
       <div className='flex flex-col md:flex-row md:justify-start justify-center items-center py-2 '>
         <div className="logo mx-5 my-2 ">
           <Link href={'/'}>
-            <Image src={"/2.png"} alt='logo' width={250} height={35} className='rounded-xl text-sm md:mr-[365px] md:w-[120px] w-[15vh] shadow-md' />
+            <img src={"/2.png"} alt='logo' width={250} height={35} className='rounded-xl text-sm md:mr-[365px] md:w-[120px] w-[15vh] shadow-md' />
           </Link>
         </div>
         <div className="nav lg:ml-[0px] text-[#0d1e35] ">

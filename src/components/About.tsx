@@ -1,8 +1,7 @@
 'use client'
-import { headerItems, userInfo } from '@/constants/constant';
+import { headerItems } from '@/constants/constant';
 import { Link as ScrollLink } from "react-scroll";
 import { useRouter } from 'next/navigation';
-import { FaOpencart } from "react-icons/fa";
 import { AiOutlineX } from "react-icons/ai";
 import { NavItems } from '@/models/Headers';
 import { useState } from "react";
@@ -45,7 +44,7 @@ const About: React.FC = () => {
                     <h4 className='lg:text-6xl lg:pt-[90px] md:pt-[50px] text-[#112d46] font-[Ariel] '>ABOUT US THE VENOM MOTORS</h4>
                     <p className='lg:text-3xl md:text-[16px] font-[Ariel] lg:pt-[70px] md:pt-[40px] lg:px-[95px] md:px-[55px] lg:pb-7 border-t-2 border-[#b7c0c9]'>
                         W Motors is the foremost manufacturer of high-performance luxury hypercars in the Middle East.
-                        W Motors is an Emirati sports car company founded in Lebanon in 2012, being the first developer of high-performance luxury sports cars in the Middle East. Based in Dubai, the company's activities include automotive design, research and development, as well as vehicle engineering and manufacture. W Motors launched its first prototype model, the Lykan HyperSport, at the Qatar International Motor Show in January 2013. Shortly thereafter, the company moved its headquarters to Dubai, in the United Arab Emirates (UAE).
+                        W Motors is an Emirati sports car company founded in Lebanon in 2012, being the first developer of high-performance luxury sports cars in the Middle East. Based in Dubai, the company&apos; activities include automotive design, research and development, as well as vehicle engineering and manufacture. W Motors launched its first prototype model, the Lykan HyperSport, at the Qatar International Motor Show in January 2013. Shortly thereafter, the company moved its headquarters to Dubai, in the United Arab Emirates (UAE).
                     </p>
 
                     <p className='lg:text-4xl md:text-2xl text-xl font-semibold lg:my-[20px] md:my-4 my-3 text-[#0d2436]  font-[Ariel]'>

@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
-import Image from 'next/image';
 import { FaOpencart } from 'react-icons/fa';
 import { IoIosCloseCircleOutline } from 'react-icons/io';
 import { useRef } from 'react';
@@ -60,7 +59,7 @@ const Page = () => {
             <div className='flex flex-col md:flex-row md:justify-start justify-center items-center py-2 '>
                 <div className="logo mx-5 my-2 ">
                     <Link href={'/'}>
-                        <Image src={"/2.png"} alt='logo' width={250} height={35} className='rounded-xl text-sm md:mr-[365px] md:w-[120px] w-[15vh] shadow-md' />
+                        <img src={"/2.png"} alt='logo' width={250} height={35} className='rounded-xl text-sm md:mr-[365px] md:w-[120px] w-[15vh] shadow-md' />
                     </Link>
                 </div>
                 <div className="nav lg:ml-[0px] text-[#0d1e35] ">
@@ -118,68 +117,68 @@ const Page = () => {
                             {
                                 name: 'double side scrach (Pair)',
                                 price: 40.99,
-                                imageUrl: 'https://m.media-amazon.com/images/I/71PZYCKrgQL.__AC_SX300_SY300_QL70_FMwebp_.jpg',
+                                imgUrl: 'https://m.media-amazon.com/imgs/I/71PZYCKrgQL.__AC_SX300_SY300_QL70_FMwebp_.jpg',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
                                 name: 'Single side scrach',
                                 price: 31.15,
-                                imageUrl: 'https://ae01.alicdn.com/kf/H5a29aff4d63e4d2d9fba5e51ab8a7440x.jpg_640x640Q90.jpg_.webp',
+                                imgUrl: 'https://ae01.alicdn.com/kf/H5a29aff4d63e4d2d9fba5e51ab8a7440x.jpg_640x640Q90.jpg_.webp',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
                                 name: 'Tattoo Bow Arrow',
                                 price: 35.99,
-                                imageUrl: 'https://m.media-amazon.com/images/I/715VZYBqPEL._AC_UL320_.jpg',
+                                imgUrl: 'https://m.media-amazon.com/imgs/I/715VZYBqPEL._AC_UL320_.jpg',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
                                 name: 'Black Fire',
                                 price: 45.12,
-                                imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbsSU23U6qq6Tom1hLXJFdWCdk6hXdkBv2Pw&s',
+                                imgUrl: 'https://encrypted-tbn0.gstatic.com/imgs?q=tbn:ANd9GcSbsSU23U6qq6Tom1hLXJFdWCdk6hXdkBv2Pw&s',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
                                 name: 'Signature Sticker',
                                 price: 35.50,
-                                imageUrl: 'https://m.media-amazon.com/images/I/61slMM3248L._AC_UL320_.jpg',
+                                imgUrl: 'https://m.media-amazon.com/imgs/I/61slMM3248L._AC_UL320_.jpg',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
                                 name: 'Wolf Sticker',
                                 price: 25.55,
-                                imageUrl: 'https://m.media-amazon.com/images/I/61StnJ3tkdL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg',
+                                imgUrl: 'https://m.media-amazon.com/imgs/I/61StnJ3tkdL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
                                 name: 'Paw Nail Scratch Sticker',
                                 price: 21.15,
-                                imageUrl: 'https://m.media-amazon.com/images/I/61M-ITltaEL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg',
+                                imgUrl: 'https://m.media-amazon.com/imgs/I/61M-ITltaEL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
                                 name: 'NFS Most Wanted Signature',
                                 price: 35.15,
-                                imageUrl: 'https://m.media-amazon.com/images/I/415KUP2h2OL._SX300_SY300_QL70_FMwebp_.jpg',
+                                imgUrl: 'https://m.media-amazon.com/imgs/I/415KUP2h2OL._SX300_SY300_QL70_FMwebp_.jpg',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
                                 name: 'Classy Comb Sticker',
                                 price: 30.15,
-                                imageUrl: 'https://m.media-amazon.com/images/I/51qHj-OSFxL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg',
+                                imgUrl: 'https://m.media-amazon.com/imgs/I/51qHj-OSFxL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
                                 name: 'Chinese dragon Long Sticker',
                                 price: 45.20,
-                                imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGLHu94kQwaouSw06HDaKOGmHB3EGe0hm05_cNakO4lGC-oNnbg5ITLguK9kQr9VZbxW0&usqp=CAU',
+                                imgUrl: 'https://encrypted-tbn0.gstatic.com/imgs?q=tbn:ANd9GcTGLHu94kQwaouSw06HDaKOGmHB3EGe0hm05_cNakO4lGC-oNnbg5ITLguK9kQr9VZbxW0&usqp=CAU',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                         ].map((product, index) => (
                             <div key={index} className="lg:w-1/3 md:w-1/2 lg:p-[20px] p-4 w-full shadow-lg shadow-black rounded-lg lg:my-4">
                                 <Link href={''}>
                                     <h2 className="block relative h-48 rounded overflow-hidden ">
-                                        <Image alt="ecommerce" className="lg:h-[220px] h-[350px] m-auto md:m-0 block" src={product.imageUrl} width={300} height={200} />
+                                        <img alt="ecommerce" className="lg:h-[220px] h-[350px] m-auto md:m-0 block" src={product.imgUrl} width={300} height={200} />
                                     </h2>
                                     <div className="mt-4">
                                         <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Stickers</h3>

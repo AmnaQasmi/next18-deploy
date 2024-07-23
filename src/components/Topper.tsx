@@ -1,6 +1,5 @@
 "use client"
 import { useState } from "react";
-import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
 import { NavItems } from "@/models/Headers";
 import { headerItems } from "@/constants/constant";
@@ -39,7 +38,7 @@ const Topper: React.FC = () => {
 
             <div>
                 <div className="flex justify-start items-start ">
-                    <Image
+                    <img
                         src="/bg.jpeg"
                         alt="bg image"
                         width={2500}
