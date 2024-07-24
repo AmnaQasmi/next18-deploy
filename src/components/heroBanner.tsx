@@ -7,6 +7,7 @@ import { urlForImage } from "../../sanity/lib/image";
 import Link from "next/link";
 import { useDispatch } from 'react-redux'; 
 import { addItem } from '@/store/cartSlice';
+import Image from 'next/image';
 
 export const getProductData = async () => {
     const res = await client.fetch(`*[_type == "Product"]{
@@ -56,9 +57,9 @@ const HeroBanner = () => {
                             <Link href={'/product/car/Bugatti Veyron'}>
                                 <div>
                                     <div className="block overflow-hidden">
-                                        <img
+                                        <Image
                                             height={300}
-                                            width={300}
+                                            width={330}
                                             className="lg:h-[35vh] h-[25vh] block lg:w-[60vh] md:w-[45vh] sm:w-[55vh] w-[55vh] m-auto rounded-md"
                                             src={urlForImage(item.image).url()} alt="Product Of Cars" />
                                     </div>
