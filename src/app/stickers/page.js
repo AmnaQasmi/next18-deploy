@@ -19,7 +19,7 @@ const Page = () => {
     const ref = useRef(null);
     const dispatch = useDispatch();
     const cart = useSelector((state) => state.cart);
-    
+
     const toggleCart = () => {
         if (ref.current) {
             ref.current.classList.toggle('translate-x-full');
@@ -68,12 +68,12 @@ const Page = () => {
                 <div onClick={toggleCart} className="cart absolute cursor-pointer right-0 top-7 mx-3 float-end">
                     <FaOpencart size={50} className='hover:text-[#666768] text-[#0d1e35]' />
                     {totalItemCount > 0 && (
-                        <span className='absolute top-0 right-0 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm'>
+                        <span className='absolute top-0 right-0 bg-[#0d1e35] text-[#fffffff8] rounded-full w-6 h-6 flex items-center justify-center text-sm'>
                             {totalItemCount}
                         </span>
                     )}
                 </div>
-                <div ref={ref} className='lg:w-96 w-64 h-full side-cart absolute top-0 right-0 bg-gray lg:px-7 px-4 py-10 transform z-20 overflow-x-hidden transition-transform translate-x-full'>
+                <div ref={ref} className='lg:w-96 w-64 h-full side-cart absolute top-0 right-0 bg-[gray] lg:px-7 px-4 py-10 transform z-20 overflow-x-hidden transition-transform translate-x-full'>
                     <h2 className='font-bold text-xl text-center'>Shopping Cart</h2>
                     <span onClick={toggleCart} className='absolute top-6 right-2 cursor-pointer text-2xl'><IoIosCloseCircleOutline /></span>
                     <ol className='list-decimal font-bold'>
@@ -184,7 +184,7 @@ const Page = () => {
                                     </div>
                                 </Link>
                                 <button
-                                    className="flex items-center text-[#adacac] bg-[#1d5045] border-0 py-2 px-4 focus:outline-none hover:bg-[#29685a] rounded text-lg"
+                                    className="text-[#d3d0d0] bg-[#1d5045] py-2 px-4 rounded focus:outline-none hover:bg-[#29685a]"
                                     onClick={() => dispatch(addItem({ name: product.name, price: product.price }))}
                                 >
                                     Add to Cart

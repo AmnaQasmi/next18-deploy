@@ -75,7 +75,7 @@ const Cars = () => {
         <div onClick={toggleCart} className="cart absolute cursor-pointer right-0 top-7 mx-3 float float-end ">
           <FaOpencart size={50} className='hover:text-[#666768] to text-[#0d1e35]' />
           {totalItemCount > 0 && (
-            <span className='absolute top-0 right-0 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm'>
+            <span className='absolute top-0 right-0 bg-[#0d1e35] text-[#fffffff8] rounded-full w-6 h-6 flex items-center justify-center text-sm'>
               {totalItemCount}
             </span>
           )}
