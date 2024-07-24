@@ -73,14 +73,14 @@ const HeroBanner = () => {
                                             <h2 className="text-[#070725] font-[Ariel] lg:text-2xl text-xl font-medium"> {item.title}</h2>
                                             <p className="mt-1 font-[Menlo] lg:text-xl text-lg font-medium">${item.price}m</p>
                                             <p className="my-2 flex-wrap break-words lg:text-xl text-lg font-[Ariel] font-medium lg:w-[260px]">Description: {item.description}. </p>
+                                        </div>
+                                    </div>
+                                </Link>
                                             <button
                                                 onClick={() => dispatch(addItem({ name: item.title, price: item.price }))}
                                                 className="text-[#d3d0d0] bg-[#1d5045] py-2 px-4 rounded focus:outline-none hover:bg-[#29685a]">
                                                 Add to Cart
                                             </button>
-                                        </div>
-                                    </div>
-                                </Link>
                             </div>
                         </div>
                     </div>
