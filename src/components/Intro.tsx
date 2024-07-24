@@ -91,7 +91,7 @@ const Intro: React.FC = () => {
             <Image
               width={700}
               height={880}
-              src={'Lykan'}
+              src={Lykan}
               alt='Lykan Hypersport'
               className='absolute rounded-md lg:w-[628px] lg:h-[560px] md:w-[500px] md:h-[460px] w-[460px] h-[250px]' />
           </div>
@@ -118,7 +118,7 @@ const Intro: React.FC = () => {
             <Image
               width={700}
               height={880}
-              src={'Fenyr'}
+              src={Fenyr}
               alt='Fenyr Supersport'
               className='absolute rounded-md lg:w-[625px] lg:h-[560px] md:w-[500px] md:h-[460px] w-[460px] h-[250px]]' />
           </div>
@@ -146,7 +146,7 @@ const Intro: React.FC = () => {
             <Image
               width={700}
               height={880}
-              src={'GhaithSMP'}
+              src={GhaithSMP}
               alt='Ghiath SmartPatrol'
               className='absolute rounded-md lg:w-[675px] lg:h-[560px] md:w-[500px] md:h-[460px] w-[460px] h-[250px]' />
           </div>
@@ -173,7 +173,7 @@ const Intro: React.FC = () => {
             <Image
               width={700}
               height={880}
-              src={'GhaithSwat'}
+              src={GhaithSwat}
               alt='Ghiath'
               className='absolute rounded-md lg:w-[675px] lg:h-[560px] md:w-[500px] md:h-[460px] w-[460px] h-[250px]' />
           </div>
@@ -201,7 +201,7 @@ const Intro: React.FC = () => {
             <Image
               width={700}
               height={880}
-              src={'GhaithVip'}
+              src={GhaithVip}
               alt='Ghiath'
               className='absolute rounded-md lg:w-[675px] lg:h-[560px] md:w-[500px] md:h-[460px] w-[460px] h-[250px]' />
           </div>

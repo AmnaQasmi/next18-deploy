@@ -4,6 +4,7 @@ import { GiHomeGarage } from "react-icons/gi";
 import { useRouter } from "next/navigation";
 import Footer from '@/components/Footer';
 import { userInfo } from '@/constants/constant';
+import Image from 'next/image';
 
 const Service = () => {
     const route = useRouter();
@@ -27,12 +28,11 @@ const Service = () => {
                 </ul>
             </div>
             <div className='flex justify-end items-end  '>
-                <img
+                <Image
                     src={"/services.jpg"}
                     alt='dp'
                     width={2000}
                     height={20}
-                    className=' '
                 />
                 <h3 className='text-[#fffdfd] absolute lg:text-7xl lg:pb-11 lg:pr-14 md:text-5xl text-3xl font-[audimatregular] pb-6 pr-10 '>
                     Our Services
@@ -85,7 +85,7 @@ const Service = () => {
                     </div>
                     <div className='justify-center items-center text-center lg:w-[500px] md:w-[450px] w-[350px] lg:ml-[170px] md:ml-[160px] sm:ml-[155px] ml-[75px] mx-[65px]'>
 
-                        <img
+                        <Image
                             src={'/brand ambassador.webp'}
                             alt='brand ambassador'
                             height={50}

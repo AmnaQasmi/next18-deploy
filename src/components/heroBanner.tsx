@@ -53,7 +53,7 @@ const HeroBanner = () => {
                 <div key={item._id} className="text-[#3d3d3d] body-font">
                     <div className="">
                         <div className="lg:w-4/5 md:w-3/4 sm:w-1/4 rounded-lg justify-center items-start cursor-pointer shadow-lg shadow-black m-4 lg:p-4 md:p-5 p-5 ml-8 w-3/4">
-                            <Link href={''}>
+                            <Link href={'/product/car/Bugatti Veyron'}>
                                 <div>
                                     <div className="block overflow-hidden">
                                         <img

@@ -3,13 +3,9 @@ import Menu from '@/components/Menu';
 import Footer from '@/components/Footer';
 import { FaOpencart } from "react-icons/fa";
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const Page = () => { // Rename the component to Page
-    const router = useRouter(); // Updated hook usage
-
-    const navigate = (name) => {
-        router.push(name);
-    }
 
     return (
         <div>
@@ -30,14 +26,16 @@ const Page = () => { // Rename the component to Page
                         <source src="/fenyr.mp4" type="video/mp4" />
                     </video>
 
-                    <div className='items-center justify-center lg:mx-[620px] mx-4 py-2 px-2 my-2'>
-                        <button onClick={() => navigate("/cars")} className='flex text-[#c5c2c2] bg-[#1d5045] border-2 border-[#dbd8d8] shadow-lg shadow-slate-900 rounded-md'>
-                            <FaOpencart /> Wanna Buy
-                        </button>
-                    </div>
+                    <Link href="/cars">
+                        <div className='items-center justify-center lg:mx-[620px] mx-4 py-2 px-2 my-2'>
+                            <button
+                                className='flex text-[#c5c2c2] bg-[#1d5045] border-2 border-[#dbd8d8] shadow-lg shadow-slate-900 rounded-md'>
+                                <FaOpencart /> Wanna Buy
+                            </button>
+                        </div>
+                    </Link>
                 </li>
             </ul>
-
             <Footer />
         </div>
     )

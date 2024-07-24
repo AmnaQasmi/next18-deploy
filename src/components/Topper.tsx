@@ -5,6 +5,7 @@ import { NavItems } from "@/models/Headers";
 import { headerItems } from "@/constants/constant";
 import { AiOutlineX } from "react-icons/ai";
 import { useRouter } from "next/navigation"; // Updated import
+import Link from "next/link";
 
 const Topper: React.FC = () => {
     const [navItem, showNavItems] = useState<boolean>(false)
@@ -49,12 +50,16 @@ const Topper: React.FC = () => {
                     </h3>
                 </div>
                 <div className="flex justify-start items-center">
-                    <button onClick={() => navigate("/login")} className="hover:bg-[#316685] to bg-[#0f273b] font-[sans] font-extrabold text-[#c5c2c2] border-[#6d6c6c] ml-5 lg:mb-[195px] lg:px-[15px] mb-[167px] p-1 md:px-2 w-fit absolute rounded-md lg:text-2xl md:text-1xl text-sm border-2">
-                        <i>Join Us</i>
-                    </button>
-                    <button onClick={() => navigate("/visitcars")} className="hover:bg-[#7c2a2a] to bg-[#5f1414] font-[sans] font-extrabold text-[#c5c2c2] ml-5 mb-24 lg:px-[15px] p-1 md:px-2 w-fit absolute rounded-md lg:text-2xl md:text-1xl text-sm border-[#6d6c6c] border-2">
-                        <i>Visit Us</i>
-                    </button>
+                        <button className="hover:bg-[#316685] to bg-[#0f273b] font-[sans] font-extrabold text-[#c5c2c2] border-[#6d6c6c] ml-5 lg:mb-[195px] lg:px-[15px] mb-[167px] p-1 md:px-2 w-fit absolute rounded-md lg:text-2xl md:text-1xl text-sm border-2">
+                    <Link href="/login">
+                            <i>Join Us</i>
+                    </Link>
+                        </button>
+                        <button className="hover:bg-[#7c2a2a] to bg-[#5f1414] font-[sans] font-extrabold text-[#c5c2c2] ml-5 mb-24 lg:px-[15px] p-1 md:px-2 w-fit absolute rounded-md lg:text-2xl md:text-1xl text-sm border-[#6d6c6c] border-2">
+                    <Link href="/visitcars">
+                            <i>Visit Us</i>
+                    </Link>
+                        </button>
                 </div>
             </div>
         </section>

@@ -53,15 +53,15 @@ const About: React.FC = () => {
                                 <i>Inpired Thoughts As An Entrepreneur</i>
                             </Link>
                         </>
-                      
+
                     </p>
-                        <br />
-                    <i className='lg:mx-[620px] mx-4 py-2 px-2 my-2'>
-                        <button onClick={() => Navigate("/services")} className='flex lg:text-4xl md:text-2xl text-xl font-medium mt-3l text-[#c5c2c2] bg-[#1d5045] border-2 border-[#dbd8d8] shadow-lg shadow-slate-900 rounded-md '><i>Services By Our Company</i></button>
-                    </i>
-                    <i className='items-center justify-center lg:mx-[620px] mx-4 py-2 px-2 my-2'>
-                        <button onClick={() => Navigate("/cars")} className='flex text-4xl text-[#c5c2c2] bg-[#1d5045] border-2 border-[#dbd8d8] shadow-lg shadow-slate-900 rounded-md'> <i>Wanna Buy</i></button>
-                    </i>
+                    <br />
+                    <Link href="/services" className='lg:mx-[620px] mx-4 py-2 px-2 my-2'>
+                        <button className='flex lg:text-4xl md:text-2xl text-xl font-medium mt-3l text-[#c5c2c2] bg-[#1d5045] border-2 border-[#dbd8d8] shadow-lg shadow-slate-900 rounded-md '><i>Services By Our Company</i></button>
+                    </Link>
+                    <Link href="/cars" className='items-center justify-center lg:mx-[620px] mx-4 py-2 px-2 my-2'>
+                        <button className='flex text-4xl text-[#c5c2c2] bg-[#1d5045] border-2 border-[#dbd8d8] shadow-lg shadow-slate-900 rounded-md'> <i>Wanna Buy</i></button>
+                    </Link>
                 </div>
 
             </div>

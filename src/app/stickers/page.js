@@ -113,7 +113,7 @@ const Page = () => {
                             {
                                 name: 'double side scrach (Pair)',
                                 price: 40.99,
-                                ImageUrl: 'https://m.media-amazon.com/Images/I/71PZYCKrgQL.__AC_SX300_SY300_QL70_FMwebp_.jpg',
+                                ImageUrl: 'https://m.media-amazon.com/images/I/71PZYCKrgQL.__AC_SX300_SY300_QL70_FMwebp_.jpg',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
@@ -125,7 +125,7 @@ const Page = () => {
                             {
                                 name: 'Tattoo Bow Arrow',
                                 price: 35.99,
-                                ImageUrl: 'https://m.media-amazon.com/Images/I/715VZYBqPEL._AC_UL320_.jpg',
+                                ImageUrl: 'https://m.media-amazon.com/images/I/715VZYBqPEL._AC_UL320_.jpg',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
@@ -137,31 +137,31 @@ const Page = () => {
                             {
                                 name: 'Signature Sticker',
                                 price: 35.50,
-                                ImageUrl: 'https://m.media-amazon.com/Images/I/61slMM3248L._AC_UL320_.jpg',
+                                ImageUrl: 'https://m.media-amazon.com/images/I/61slMM3248L._AC_UL320_.jpg',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
                                 name: 'Wolf Sticker',
                                 price: 25.55,
-                                ImageUrl: 'https://m.media-amazon.com/Images/I/61StnJ3tkdL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg',
+                                ImageUrl: 'https://m.media-amazon.com/images/I/61StnJ3tkdL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
                                 name: 'Paw Nail Scratch Sticker',
                                 price: 21.15,
-                                ImageUrl: 'https://m.media-amazon.com/Images/I/61M-ITltaEL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg',
+                                ImageUrl: 'https://m.media-amazon.com/images/I/61M-ITltaEL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
                                 name: 'NFS Most Wanted Signature',
                                 price: 35.15,
-                                ImageUrl: 'https://m.media-amazon.com/Images/I/415KUP2h2OL._SX300_SY300_QL70_FMwebp_.jpg',
+                                ImageUrl: 'https://m.media-amazon.com/images/I/415KUP2h2OL._SX300_SY300_QL70_FMwebp_.jpg',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
                                 name: 'Classy Comb Sticker',
                                 price: 30.15,
-                                ImageUrl: 'https://m.media-amazon.com/Images/I/51qHj-OSFxL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg',
+                                ImageUrl: 'https://m.media-amazon.com/images/I/51qHj-OSFxL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg',
                                 description: 'Best water-proof stickers for your car (Hight-Quality)'
                             },
                             {
@@ -172,7 +172,7 @@ const Page = () => {
                             },
                         ].map((product, index) => (
                             <div key={index} className="lg:w-1/3 md:w-1/2 lg:p-[20px] p-4 w-full shadow-lg shadow-black rounded-lg lg:my-4">
-                                <Link href={''}>
+                                <Link href={'/product/car/Bugatti Veyron'}>
                                     <div className="block relative h-48 rounded overflow-hidden">
                                         <Image alt="ecommerce" className="lg:h-[220px] h-[350px] m-auto md:m-0 block" src={product.ImageUrl} width={300} height={200} unoptimized />
                                     </div>
