@@ -39,8 +39,7 @@ const About: React.FC = () => {
 
                     </div>
                 </div>
-                <div className='flex flex-wrap break-words text-center justify-center items-center lg:w-[1500px] font-[Ariel] text-[#132e46] md:w-[1100px] w-[850px] '>
-
+                <div className='flex flex-wrap break-words text-center justify-center items-center lg:w-[1500px] font-[Ariel] text-[#132e46] md:w-[1100px]  '>
                     <h4 className='lg:text-6xl lg:pt-[90px] md:pt-[50px] text-[#112d46] font-[Ariel] '>ABOUT US THE VENOM MOTORS</h4>
                     <p className='lg:text-3xl md:text-[16px] font-[Ariel] lg:pt-[70px] md:pt-[40px] lg:px-[95px] md:px-[55px] lg:pb-7 border-t-2 border-[#b7c0c9]'>
                         W Motors is the foremost manufacturer of high-performance luxury hypercars in the Middle East.
@@ -53,15 +52,15 @@ const About: React.FC = () => {
                                 <i>Inpired Thoughts As An Entrepreneur</i>
                             </Link>
                         </>
+                        <Link href="/services" className='lg:mx-[620px] mx-4 py-2 px-2 my-2'>
+                            <button className='flex lg:text-4xl md:text-2xl text-xl font-medium text-[#c5c2c2] bg-[#1d5045] border-2 border-[#dbd8d8] shadow-lg shadow-slate-900 rounded-md'><i>Services By Our Company</i></button>
+                        </Link>
+                        <br />
+                        <Link href="/cars" className='items-center justify-center lg:mx-[620px] mx-4 py-2 px-2 my-2'>
+                            <button className='flex lg:text-4xl md:text-2xl text-xl font-medium text-[#c5c2c2] bg-[#1d5045] border-2 border-[#dbd8d8] shadow-lg shadow-slate-900 rounded-md'> <i>Wanna Buy</i></button>
+                        </Link>
 
                     </p>
-                    <br />
-                    <Link href="/services" className='lg:mx-[620px] mx-4 py-2 px-2 my-2'>
-                        <button className='flex lg:text-4xl md:text-2xl text-xl font-medium mt-3l text-[#c5c2c2] bg-[#1d5045] border-2 border-[#dbd8d8] shadow-lg shadow-slate-900 rounded-md '><i>Services By Our Company</i></button>
-                    </Link>
-                    <Link href="/cars" className='items-center justify-center lg:mx-[620px] mx-4 py-2 px-2 my-2'>
-                        <button className='flex text-4xl text-[#c5c2c2] bg-[#1d5045] border-2 border-[#dbd8d8] shadow-lg shadow-slate-900 rounded-md'> <i>Wanna Buy</i></button>
-                    </Link>
                 </div>
 
             </div>
